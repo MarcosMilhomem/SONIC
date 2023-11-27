@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+section div.background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+section div.background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section div.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.9));
+    display: flex;
+    align-items: center;
+}
+
+section div.box div.conteudo {
+    width: 100%;
+    margin-top: 70px;
+}
+
+section div.box div.conteudo2 {
+    width: 100%;
+} 
+
+section div.box p {
+    color: rgba(245, 245, 245, 0.712);
+    margin-left: 40px;
+    margin-right: -200px;
+    width: 650px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+section div.box #img-box {
+    margin-left: -4%;
+    width: 130%;
+    min-width: 300px;
+}
+
+#sonic-solo {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -60px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+}
+
+footer p {
+    color: rgb(73, 109, 226);
+}
+
+footer a {
+    color: rgb(83, 110, 201);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    section div.box {
+        width: 100%;
+        padding: 6%;
+        justify-content: center;
+    }
+
+    section div.box div.conteudo {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
